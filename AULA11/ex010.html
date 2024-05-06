@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema do Detran</title>
+    <style>
+        main{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0px 30%;
+           
+            
+        }
+        div{
+            margin: auto;
+            margin-top: 10px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>RADAR</h1>
+    <main>
+        
+        <input type="number" name="" id="velocidade">
+        <input type="button" value="verificar" onclick="clicar()">
+        <div id="resposta">
+    </main>
+
+    </div>
+    <script>
+        var ver = window.document.getElementById("verificar")
+        function clicar(){
+            var vel = window.document.getElementById("velocidade")
+            var res = window.document.getElementById("resposta")
+            var km = Number(vel.value)
+            res.innerHTML= `<p>A sua velocidade atual é de ${km}Km/h</p>`
+            if( km > 60){
+                res.innerHTML += "<p>Você está multado !!!</p>"
+                res.style = "color:red; font-size:1.5m;"
+            }else{
+                res.innerHTML += "fique atento com sua velocidade "
+                res.style = "color:black; font-size:0.5m;"
+            }
+            res.innerHTML += "<p> Sempre ande com cinto de segurança!!</p>"
+
+        }
+    </script>
+</body>
+</html>

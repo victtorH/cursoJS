@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+          body{
+            background-color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #resul{
+            margin: 20px auto;
+            width:100px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background-color: rgb(255, 126, 33);
+            color:white;
+            border-radius: 8px;
+            transition-duration: 1s;
+
+        }
+        #txtn1, #txtn2{
+            transition-duration: 1s;
+            border-radius: 3px;
+        }
+        .org{
+            display: flex;
+            justify-content: space-between;
+        
+        }
+        #btn{
+            background-color: rgb(225, 225, 17);
+            border-radius: 4px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <div class="org">
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2" >
+        <input type="button" value="somar" onclick="somar()"id="btn">
+    </div>
+   <div id="resul">Resultado</div>
+    <script>
+     var txt1 = window.document.getElementById("txtn1")    
+    var txt2 = window.document.getElementById("txtn2")
+    var resul = window.document.getElementById("resul")
+   txt1.addEventListener("mouseenter", entrou)
+   txt1.addEventListener("mouseleave", saiu)
+   txt2.addEventListener("mouseenter", entrouu)
+   txt2.addEventListener("mouseleave", saiuu)
+   
+
+
+   function somar(){ 
+    var n1 = Number(txt1.value)
+    var n2 = Number(txt2.value)
+    var s = n1 + n2
+    resul.innerHTML = `A soma é ${s}`
+    resul.style = "width:300px ; height: 80px ; line-height:80px; background-color: red ;"
+   }
+   function entrou(){
+    txt1.style = "width:190px; border-radius: 10px ; height: 20px;"
+    
+   }
+    function saiu(){
+        txt1.style = "width:165px; height:15px; border-radius:3px;"
+    }
+    function entrouu(){
+    txt2.style = "width:190px; border-radius: 10px ; height: 20px;"
+    
+   }
+    function saiuu(){
+        txt2.style = "width:165px; height:15px; border-radius:3px;"
+    }
+   
+    
+
+
+
+
+    </script>
+</body>
+
+</html>

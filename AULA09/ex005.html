@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: aliceblue;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Primeiros estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript</p>
+    <div id="msg">click em mim</div>
+    <script>
+        /*var p1 = window.document.getElementsByTagName('p')[1]
+    window.document.write('Está escrito assim: '+p1.innerHTML)*/
+    var muda = document.querySelector('div#msg')
+    muda.style.background = 'yellow'
+    </script>
+</body>
+</html>
