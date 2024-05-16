@@ -5,7 +5,7 @@ var h = window.document.getElementById("hora")
 var img = window.document.getElementById("foto")
 
 var horario = new Date
-hora = horario.getHours()
+var hora = horario.getHours()
 h.innerHTML += `${hora}h`
 
 
