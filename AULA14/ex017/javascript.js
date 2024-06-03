@@ -6,7 +6,7 @@ btn.addEventListener("click",clique)
 
 function clique(){
     var num = Number(ini.value)
-if (num  == 0){
+if (num == 0){
     window.alert('[ERRO]digite um valor para poder ser executado!')
     
 }else{
