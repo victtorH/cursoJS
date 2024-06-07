@@ -1,0 +1,22 @@
+header{
+    text-align: center;
+}
+
+section{
+    background-color: rgb(47, 74, 148);
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    width: 410px;
+
+    border-radius: 10px;
+}
+
+div{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+select{
+    padding:50px;
+}
