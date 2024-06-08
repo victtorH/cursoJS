@@ -37,4 +37,6 @@ if (numini < numfim){
              }else{
             res.innerHTML += `N°${numini}/`
         }}
-    }}
+    }
+    res.style = 'width:100px;'
+}

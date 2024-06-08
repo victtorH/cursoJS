@@ -4,9 +4,9 @@ numeros.push(9)
 console.log(`minhas variaveis compostas são ${numeros}`)*/
 /*
 console.log(`${numeros.length}`)*/
-/*
+
 numeros.sort()
-console.log(numeros)*/
+console.log(numeros)
 /*
 for(contador in numeros){
     console.log(`o espaço ${contador} recebe a variavel ${numeros[contador]}`)
