@@ -1,3 +1,6 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 header{
     text-align: center;
 }
@@ -19,4 +22,5 @@ div{
 }
 select{
     padding:50px;
+    transition: 5s;
 }
