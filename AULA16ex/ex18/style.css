@@ -11,16 +11,25 @@ section{
     text-align: center;
     padding: 20px;
     width: 410px;
-
     border-radius: 10px;
 }
 
-div{
-    margin: 20px;
-    display: flex;
-    justify-content: space-around;
+#valores{
+    height: 100px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
 }
-select{
-    padding:50px;
-    transition: 5s;
+#verificar{
+height: 20px;
+position: absolute;
+left:   62% ;
+top:60% ;
 }
+#campo2{
+    margin-top: 30px;
+  
+    
+}
+
+
