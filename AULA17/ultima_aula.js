@@ -4,7 +4,7 @@ let amigo = {
     peso:60.2,
     engordou(p=0){
         console.log(`engordou ${p}kg`)
-        amigo.peso += p
+        this.peso += p
     },
 }
 amigo.engordou(-12)
